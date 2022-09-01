@@ -50,7 +50,8 @@
     text-align: center;
     padding: 30px;
     font-size: large;
-    overflow: auto;
+    overflow-wrap: anywhere;
+    max-width: 340px;
     &::-webkit-scrollbar {
       width: 10px;
     }
