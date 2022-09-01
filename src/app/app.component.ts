@@ -55,7 +55,7 @@ export class AppComponent {
       generatedPassword += validChars[index];
     }
     this.password = generatedPassword;
-    this.modalToogle();
+    this.toggle = "none" ? "block" : "none";
 
   }
 }
