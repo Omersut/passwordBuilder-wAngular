@@ -1,8 +1,10 @@
 .mainarea {
   border: 1px solid cadetblue;
   padding: 20px;
+  box-shadow: 2px 2px 3px cadetblue;
   h1 {
     text-transform: uppercase;
+    text-align: center;
   }
   div {
     margin: 10px 0;
