@@ -1,0 +1,73 @@
+.mainarea {
+  border: 1px solid;
+  padding: 20px;
+  h1 {
+    text-transform: uppercase;
+  }
+  div {
+    margin: 10px 0;
+    input {
+      padding: 8px;
+    }
+
+    &:last-child {
+      text-align: end;
+      button {
+        padding: 15px;
+        border-radius: 8px;
+        cursor: pointer;
+        background-color: aliceblue;
+      }
+    }
+  }
+}
+.modal {
+  border: 1px solid;
+  width: auto;
+  background-color: aliceblue;
+  position: relative;
+  margin-bottom: 20px;
+
+  h1 {
+    text-align: center;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+  }
+  i {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: black;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .password {
+    text-align: center;
+    padding: 30px;
+    font-size: large;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  }
+}

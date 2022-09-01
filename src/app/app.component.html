@@ -1,0 +1,34 @@
+<div class="modal" [ngStyle]="{ display: toggle }">
+  <h1>Your Password</h1>
+  <i (click)="modalToogle()">❌</i>
+  <div class="password">{{ password }}</div>
+</div>
+<div class="mainarea">
+  <h1>Password Builder</h1>
+  <div>
+    <label>Password Length </label>
+    <input type="number" (change)="modifyLength($event.target)" />
+  </div>
+  <div>
+    <label>Use Alphabet </label>
+    <input (change)="modifyLetters()" type="checkbox" />
+  </div>
+  <div>
+    <label>Use Number </label>
+    <input (change)="modifyNumbers()" type="checkbox" />
+  </div>
+  <div>
+    <label>Use Symbol </label>
+    <input (change)="modifySymbols()" type="checkbox" />
+  </div>
+  <div>
+    <button
+      [disabled]="
+        !(length && (includeLetters || includeNumbers || includeSymbols))
+      "
+      (click)="buttonClick()"
+    >
+      Create
+    </button>
+  </div>
+</div>
