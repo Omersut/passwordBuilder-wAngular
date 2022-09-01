@@ -1,10 +1,16 @@
 .mainarea {
   border: 1px solid cadetblue;
   padding: 20px;
-  box-shadow: 2px 2px 3px cadetblue;
+  &:hover {
+    box-shadow: 60px 20px 0 rgb(216, 237, 255), 110px -10px 0 cadetblue;
+    transition: box-shadow 2s;
+  }
   h1 {
     text-transform: uppercase;
     text-align: center;
+    font-weight: lighter;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
   }
   div {
     margin: 10px 0;
@@ -34,11 +40,17 @@
   background-color: aliceblue;
   position: relative;
   margin-bottom: 20px;
+  animation: jump 0.5s infinite;
+
+  &:hover {
+    animation: none;
+  }
 
   h1 {
     text-align: center;
     border-bottom: 1px solid;
     padding-bottom: 10px;
+    font-weight: 400;
   }
   i {
     position: absolute;
@@ -77,5 +89,26 @@
     &::-webkit-scrollbar-thumb:hover {
       background: #555;
     }
+  }
+}
+@keyframes jump {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(1deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(-1deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
   }
 }

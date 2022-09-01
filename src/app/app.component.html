@@ -1,7 +1,7 @@
 <div class="modal" [ngStyle]="{ display: toggle }">
   <h1>Your Password</h1>
   <i (click)="modalToogle()">❌</i>
-  <div class="password">{{ password }}</div>
+  <div class="password">{{ password.slice(0, 30) }}</div>
 </div>
 <div class="mainarea">
   <h1>Password Builder</h1>
