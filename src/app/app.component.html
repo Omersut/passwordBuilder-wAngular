@@ -6,23 +6,30 @@
 <div class="mainarea">
   <h1>Password Builder</h1>
   <div>
-    <label>Password Length </label>
-    <input type="number" (change)="modifyLength($event.target)" />
+    <label
+      >Password Length
+      <input type="number" (change)="modifyLength($event.target)"
+    /></label>
   </div>
   <div>
-    <input (change)="modifyLetters()" type="checkbox" />
-
-    <label> Use Alphabet </label>
+    <label>
+      <input (change)="modifyLetters()" type="checkbox" />
+      Use Alphabet
+    </label>
   </div>
   <div>
-    <input (change)="modifyNumbers()" type="checkbox" />
+    <label>
+      <input (change)="modifyNumbers()" type="checkbox" />
 
-    <label> Use Number </label>
+      Use Number
+    </label>
   </div>
   <div>
-    <input (change)="modifySymbols()" type="checkbox" />
+    <label>
+      <input (change)="modifySymbols()" type="checkbox" />
 
-    <label> Use Symbol </label>
+      Use Symbol
+    </label>
   </div>
   <div>
     <button
