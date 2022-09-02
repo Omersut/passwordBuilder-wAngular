@@ -1,9 +1,11 @@
 .mainarea {
   border: 1px solid cadetblue;
   padding: 20px;
+  box-shadow: 50px 15px 0 rgb(216, 237, 255), 90px -7px 0 cadetblue;
+  transition: box-shadow 2s;
+
   &:hover {
     box-shadow: 60px 20px 0 rgb(216, 237, 255), 110px -10px 0 cadetblue;
-    transition: box-shadow 2s;
   }
   h1 {
     text-transform: uppercase;
@@ -15,7 +17,7 @@
   div {
     margin: 10px 0;
     input {
-      padding: 8px;
+      padding: 7px;
     }
 
     &:last-child {
